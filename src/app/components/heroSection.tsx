@@ -1,6 +1,6 @@
 import Link from "next/link";
-import React from "react";
 import { MovingBorderBtn } from "./ui/moving-border";
+import Title from "./Title";
 
 export default function HeroSection() {
   return (
@@ -15,14 +15,11 @@ export default function HeroSection() {
         <p className="md:w-96 text-lg text-gray-300">
           {"Currently Working in Vanilla Tech! as a Database Developer"}
         </p>
-        <Link href={"mailto:khanaldavit@gmail.com"} className="inline-block ">
-          <div>
-            <h1 className=" h-9 text-3xl font-bold hover:text-green-400">
-              Reachout to me
-            </h1>
-            <div className="w-40 h-2 bg-green-500 rounded-full "></div>
-            <div className="w-40 h-2 bg-indigo-500 rounded-full translate-x-2"></div>
-          </div>
+        <Link
+          href={"mailto:khanaldavit@gmail.com"}
+          className="inline-block group"
+        >
+          <Title text={"Reachout to Me"} />
         </Link>
       </div>
 
