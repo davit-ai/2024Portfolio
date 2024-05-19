@@ -19,13 +19,19 @@ export default function Navbar() {
   return (
     <nav className="py-10 flex justify-between items-center">
       <h1 className="text-sm font-bold underline underline-offset-8 decoration-green-500 -rotate-6 hover:scale-150 transition-all">
-        Davit・khanal • アイ
+        <a href="/">Davit・khanal • アイ</a>
       </h1>
       <div className="flex items-center gap-5">
         {socials.map((social, index) => {
           const Icon = social.Icon;
           return (
-            <Link href={social.link} key={index} aria-label={social.label}>
+            <Link
+              href={social.link}
+              key={index}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label={social.label}
+            >
               <Icon className="w-5 h-5 hover:scale-125 transition-all " />
             </Link>
           );
