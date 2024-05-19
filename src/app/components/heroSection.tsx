@@ -17,7 +17,9 @@ export default function HeroSection() {
         </p>
         <Link href={"mailto:khanaldavit@gmail.com"} className="inline-block ">
           <div>
-            <h1 className="text-3xl font-bold">Reachout to me</h1>
+            <h1 className=" h-9 text-3xl font-bold hover:text-green-400">
+              Reachout to me
+            </h1>
             <div className="w-40 h-2 bg-green-500 rounded-full "></div>
             <div className="w-40 h-2 bg-indigo-500 rounded-full translate-x-2"></div>
           </div>
