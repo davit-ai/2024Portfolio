@@ -1,5 +1,3 @@
-import React from "react";
-
 export default function Title({
   text,
   className,
@@ -8,14 +6,12 @@ export default function Title({
   className?: string;
 }) {
   return (
-   
-      <div className={className}>
-        <h1 className=" h-9 text-3xl font-bold group-hover:text-green-400">
-          {text}
-        </h1>
-        <div className="w-40 h-2 bg-green-500 rounded-full "></div>
-        <div className="w-40 h-2 bg-indigo-500 rounded-full translate-x-2"></div>
-      </div>
-   
+    <div className={className}>
+      <h1 className=" h-9 text-3xl font-bold group-hover:text-green-400">
+        {text}
+      </h1>
+      <div className="w-40 h-2 bg-green-500 rounded-full "></div>
+      <div className="w-40 h-2 bg-indigo-500 rounded-full translate-x-2"></div>
+    </div>
   );
 }
