@@ -18,7 +18,7 @@ export default function Navbar() {
 
   return (
     <nav className="py-10 flex justify-between items-center">
-      <h1 className="text-sm font-bold underline underline-offset-8 decoration-green-500 -rotate-6 hover:scale-150 transition-all">
+      <h1 className="text-sm font-bold underline underline-offset-8 decoration-slate-500 -rotate-6 hover:scale-150 transition-all">
         <a href="/">Davit・khanal • アイ</a>
       </h1>
       <div className="flex items-center gap-5">
